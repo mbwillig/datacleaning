@@ -1,5 +1,7 @@
 datacleaning
 ============
+The run_analysis.r script reworks and tidies the UCI HAR Dataset. The output contains mean and std values reported in the HAR dataset averaged over each combination of subject and activity.
+
 
 The run_analysis.r script works by loading all data and labels as tables, namely:
 
