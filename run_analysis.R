@@ -1,4 +1,4 @@
-#script for reworking and tidying the UCI HAR Dataset.
+#script for reworking and tidying the UCI HAR Dataset. Outputs "resultDF" dataframe
 
 #read data and labels
 y_test<-read.table("y_test.txt")
@@ -27,9 +27,6 @@ x_test<-cbind(x_test,y_test[,1])
 names(x_test)[ncol(x_test)]="activity"
 x_train<-cbind(x_train,y_train[,1])
 names(x_train)[ncol(x_train)]="activity"
-
-#melts acitivy col
-library(tidyr)
 
 #stacks train and test data
 alldata<-rbind(x_train,x_test)
